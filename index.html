@@ -152,7 +152,9 @@
     .grid{grid-template-columns:1fr}
     .themes{grid-template-columns:1fr}
     .vids{grid-template-columns:1fr}
-    .toc-wrap{display:none}
+    .toc-wrap{left:unset;top:unset;right:unset;transform:none;bottom:0;width:100%;flex-direction:column-reverse;align-items:stretch}
+    .toc-tab{writing-mode:horizontal-tb;transform:none;border-radius:0;text-align:center;padding:14px;font-size:12px}
+    .toc-panel{border-left:1px solid rgba(194,143,233,0.35);border-radius:0;border-bottom:none;max-height:60vh;overflow-y:auto}
   }
 </style>
 </head>
