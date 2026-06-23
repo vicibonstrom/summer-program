@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <script type="application/json" id="cowork-artifact-meta">
 {
@@ -126,14 +127,14 @@
   footer{background:var(--navy);text-align:center;padding:30px 0;font-size:13px;color:var(--cream-dim);font-weight:500}
 
   /* TOC */
-  .toc-wrap{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:100;display:flex;align-items:center;gap:0}
-  .toc-tab{background:var(--lav);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;padding:14px 8px;border-radius:10px 0 0 10px;cursor:pointer;user-select:none;transition:background .15s;white-space:nowrap}
+  .toc-wrap{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:100;display:flex;align-items:center;gap:0}
+  .toc-tab{background:var(--lav);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);padding:14px 8px;border-radius:0 10px 10px 0;cursor:pointer;user-select:none;transition:background .15s;white-space:nowrap}
   .toc-tab:hover{background:var(--lav-soft)}
-  .toc-panel{background:var(--card);border:1px solid var(--line);border-right:none;border-radius:14px 0 0 14px;padding:20px 18px;min-width:180px;display:none;flex-direction:column;gap:4px}
+  .toc-panel{background:var(--card);border:1px solid rgba(194,143,233,0.35);border-left:none;border-radius:0 14px 14px 0;padding:20px 18px;min-width:180px;display:none;flex-direction:column;gap:2px;box-shadow:0 4px 24px rgba(0,0,0,0.4)}
   .toc-panel.open{display:flex}
   .toc-panel a{font-size:13px;font-weight:600;color:var(--cream-dim);text-decoration:none;padding:7px 10px;border-radius:8px;transition:background .12s,color .12s;display:block}
   .toc-panel a:hover,.toc-panel a.active{background:rgba(194,143,233,0.15);color:var(--lav)}
-  .toc-title{font-size:11px;font-weight:700;color:var(--lav);letter-spacing:0.1em;text-transform:uppercase;padding:0 10px 8px;border-bottom:1px solid var(--line);margin-bottom:4px}
+  .toc-title{font-size:11px;font-weight:700;color:var(--lav);letter-spacing:0.1em;text-transform:uppercase;padding:0 10px 10px;border-bottom:1px solid var(--line);margin-bottom:6px}
 
   @media(max-width:860px){
     .pillars{grid-template-columns:1fr}
@@ -227,21 +228,14 @@
         <div class="ico">&#9733;</div>
         <h3>New creative direction</h3>
         <p>Our latest visual and content style guide - what good Knowunity content looks and feels like right now.</p>
-        <a class="open" href="https://canva.link/kp5vsddkzfwlski" target="_blank" rel="noopener">Open &rarr;</a>
+        <a class="open" href="https://www.canva.com/design/DAHIT76PU7E/Dh4KGosdP5EHuXzbfxrsXA/edit" target="_blank" rel="noopener">Open &rarr;</a>
       </div>
 
       <div class="res">
         <div class="ico">&#9998;</div>
         <h3>Content guide</h3>
         <p>A full breakdown of what makes great content on our platform - hooks, formats, do's and don'ts.</p>
-        <a class="open" href="https://knowunity.notion.site/Content-Guide-Amb-2f0ee2043297801e825ddef180a017e1" target="_blank" rel="noopener">Open &rarr;</a>
-      </div>
-
-      <div class="res">
-        <div class="ico">&#10003;</div>
-        <h3>Posting checklist</h3>
-        <p>A simple checklist to run before every post - caption, hook, thumbnail, hashtags and more.</p>
-        <a class="open" href="https://www.canva.com/design/DAHMSq7zrvE/XWyucXyw5HJuL-MTi-WCIg/edit" target="_blank" rel="noopener">Open &rarr;</a>
+        <a class="open" href="https://app.notion.com/p/2f0ee2043297801e825ddef180a017e1" target="_blank" rel="noopener">Open &rarr;</a>
       </div>
 
       <div class="res">
@@ -422,6 +416,7 @@
 </footer>
 
 <div class="toc-wrap" id="toc">
+  <div class="toc-tab" id="tocTab">Contents</div>
   <div class="toc-panel" id="tocPanel">
     <div class="toc-title">On this page</div>
     <a href="#why">Why this exists</a>
@@ -432,7 +427,6 @@
     <a href="#videos">Top videos</a>
     <a href="#checklist">Pre-post checklist</a>
   </div>
-  <div class="toc-tab" id="tocTab">Contents</div>
 </div>
 
 <script>
